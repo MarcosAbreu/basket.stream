@@ -76,7 +76,7 @@ export type ProductType = {
   attributes: {
     name: string;
     images: {
-      data: any[];
+      data: unknown[];
     };
     description: string;
     brand: {
@@ -129,10 +129,12 @@ export type ForgotPasswordFormInputs = {
   email: string;
 };
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type SingleFormInput = {
   register: any;
   errors: any;
 };
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 export type ShippingFormData = {
   country: string;
