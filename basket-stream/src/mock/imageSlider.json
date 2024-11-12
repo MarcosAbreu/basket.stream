@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/mock/imageSlider/imageNews1.png",
+    "title": "HEAT Tries to Protect the Lead to the FINALS",
+    "description": "CELTICS head to MIAMI for a crucial Game 6 in hopes of tying the series. With Porzingis back on the court, this matchup is being hailed as the game of the year for this playoff season. Fans anticipate a fierce battle as both teams fight for a spot in the finals.",
+    "link": "/news/heat-celtics-game6"
+  },
+  {
+    "image": "/mock/imageSlider/imageNews2.png",
+    "title": "Lakers and Celtics Renew Historic Rivalry for Championship Glory",
+    "description": "In a playoff showdown that recalls the greatest NBA rivalry, the Lakers and Celtics are set to clash for the championship. LeBron James aims to lead LA to another title, while Jayson Tatum and the Celtics are determined to bring the trophy back to Boston.",
+    "link": "/news/lakers-celtics-championship"
+  },
+  {
+    "image": "/mock/imageSlider/imageNews3.png",
+    "title": "Nuggets Face Warriors in Thrilling Semifinal Showdown",
+    "description": "Reigning MVP Nikola Jokić and the Nuggets take on Steph Curry's Warriors in a highly anticipated semifinal series. With both teams at full strength, this battle is expected to showcase elite performances from two of the league's brightest stars.",
+    "link": "/news/nuggets-warriors-semifinal"
+  }
+]

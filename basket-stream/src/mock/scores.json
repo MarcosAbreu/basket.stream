@@ -1,0 +1,38 @@
+[
+  {
+    "teamAway": {
+      "score": 88,
+      "logo": "/mock/teamLogos/scoreboard-DEN.png",
+      "teamName": "Denver Nuggets"
+    },
+    "teamHome": {
+      "score": 92,
+      "logo": "/mock/teamLogos/scoreboard-GSW.png",
+      "teamName": "Golden State Warriors"
+    }
+  },
+  {
+    "teamAway": {
+      "score": 89,
+      "logo": "/mock/teamLogos/scoreboard-LAL.png",
+      "teamName": "Los Angeles Lakers"
+    },
+    "teamHome": {
+      "score": 101,
+      "logo": "/mock/teamLogos/scoreboard-BOS.png",
+      "teamName": "Boston Celtics"
+    }
+  },
+  {
+    "teamAway": {
+      "score": 114,
+      "logo": "/mock/teamLogos/scoreboard-MEM.png",
+      "teamName": "Memphis Grizzlies"
+    },
+    "teamHome": {
+      "score": 128,
+      "logo": "/mock/teamLogos/scoreboard-NYK.png",
+      "teamName": "New York Knicks"
+    }
+  }
+]
