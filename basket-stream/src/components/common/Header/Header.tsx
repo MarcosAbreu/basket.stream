@@ -48,12 +48,13 @@ function Header() {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
         bgcolor: "transparent",
         boxShadow: 0,
-        height: "80px",
+        height: { md: "80px", xs: "60px" },
         width: "100vw",
+        overflow: "hidden",
       }}
     >
       <Container disableGutters maxWidth={false}>

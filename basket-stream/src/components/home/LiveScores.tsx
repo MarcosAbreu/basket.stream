@@ -7,6 +7,7 @@ import Image from "next/image";
 type Game = {
   teamAway: { score: number; logo: string; teamName: string };
   teamHome: { score: number; logo: string; teamName: string };
+  url: string;
 };
 
 const LiveScores = ({ games }: { games: Game[] }) => {
@@ -23,21 +24,22 @@ const LiveScores = ({ games }: { games: Game[] }) => {
   return (
     <Box
       sx={{
-        height: "50px",
+        height: { md: "50px", xs: "60px" },
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: { md: "space-between", xs: "normal" },
         color: "white",
-        width: "50%",
+        width: { md: "50%", xs: "100%" },
       }}
     >
       <Box
         sx={{
-          width: "170px",
-          height: "100%",
-          bgcolor: "primary.main",
+          width: { md: "170px", xs: "80px" },
+          height: { md: "100%", xs: "60px" },
+          bgcolor: "common.black",
           display: "flex",
           alignItems: "center",
+          p: "4px",
         }}
       >
         <Typography
@@ -45,9 +47,10 @@ const LiveScores = ({ games }: { games: Game[] }) => {
             textAlign: "center",
             width: "100%",
             m: "auto 0",
-            color: "common.black",
+            color: "primary.main",
             textTransform: "uppercase",
             fontWeight: 600,
+            fontSize: { md: "16px", xs: "14px" },
           }}
         >
           Live Scores
@@ -56,12 +59,12 @@ const LiveScores = ({ games }: { games: Game[] }) => {
 
       <Box
         sx={{
-          width: "calc(100% - 170px)",
+          width: { md: "calc(100% - 170px)", xs: "calc(100% - 80px)" },
+          height: { md: "100%", xs: "60px" },
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          bgcolor: "background.paper",
-          height: "100%",
+          bgcolor: "rgba(255,255,255,0.05)",
           padding: "0",
         }}
       >
@@ -90,44 +93,54 @@ const LiveScores = ({ games }: { games: Game[] }) => {
         >
           {games.map((game, index) => (
             <Box key={index} sx={{ display: "flex", alignItems: "center" }}>
-              <Box
-                sx={{
-                  minWidth: "200px",
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "0 20px",
-                  flexShrink: 0,
-                  textAlign: "center",
-                  overflow: "hidden",
-                  bgcolor: "rgba(255,255,255,0.1)",
-                }}
-              >
-                <Image
-                  src={game.teamAway.logo}
-                  alt={game.teamAway.teamName}
-                  width={70}
-                  height={50}
-                  objectFit="contain"
-                />
-                <Typography
+              <a href={game.url}>
+                <Box
                   sx={{
-                    fontWeight: "bold",
-                    mx: 1,
-                    whiteSpace: "nowrap",
+                    minWidth: { md: "200px", xs: "150px" },
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: { md: "0 20px", xs: "0 10px" },
+                    flexShrink: 0,
+                    textAlign: "center",
+                    overflow: "hidden",
+                    height: { md: "50px", xs: "60px" },
+                    bgcolor: "rgba(255,255,255,0.05)",
                   }}
                 >
-                  {game.teamAway.score} - {game.teamHome.score}
-                </Typography>
-                <Image
-                  src={game.teamHome.logo}
-                  alt={game.teamHome.teamName}
-                  width={70}
-                  height={50}
-                  objectFit="contain"
-                />
-              </Box>
+                  <Box
+                    sx={{
+                      width: { md: "70px", xs: "60px" },
+                      height: { md: "50px", xs: "60px" },
+                      position: "relative",
+                    }}
+                  >
+                    <Image
+                      src={game.teamAway.logo}
+                      alt={game.teamAway.teamName}
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontWeight: "bold",
+                      mx: 1,
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {game.teamAway.score} - {game.teamHome.score}
+                  </Typography>
+                  <Image
+                    src={game.teamHome.logo}
+                    alt={game.teamHome.teamName}
+                    width={70}
+                    height={50}
+                    style={{ objectFit: "cover" }}
+                  />
+                </Box>
+              </a>
               {index < games.length - 1 && (
                 <Divider
                   orientation="vertical"

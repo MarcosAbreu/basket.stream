@@ -9,7 +9,8 @@
       "score": 92,
       "logo": "/mock/teamLogos/scoreboard-GSW.png",
       "teamName": "Golden State Warriors"
-    }
+    },
+    "url": "https://nba.com/game/den-vs-gsw"
   },
   {
     "teamAway": {
@@ -21,7 +22,8 @@
       "score": 101,
       "logo": "/mock/teamLogos/scoreboard-BOS.png",
       "teamName": "Boston Celtics"
-    }
+    },
+    "url": "https://nba.com/game/lal-vs-bos"
   },
   {
     "teamAway": {
@@ -33,6 +35,7 @@
       "score": 128,
       "logo": "/mock/teamLogos/scoreboard-NYK.png",
       "teamName": "New York Knicks"
-    }
+    },
+    "url": "https://nba.com/game/mem-vs-nyk"
   }
 ]

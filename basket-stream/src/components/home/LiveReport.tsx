@@ -31,18 +31,19 @@ const LiveReport = ({ news }: { news: string[] }) => {
         height: "50px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: { md: "space-between", xs: "normal" },
         color: "white",
         flex: 1,
       }}
     >
       <Box
         sx={{
-          width: "170px",
-          height: "100%",
-          bgcolor: "primary.main",
+          width: { md: "170px", xs: "80px" },
+          height: { md: "100%", xs: "60px" },
+          bgcolor: "common.black",
           display: "flex",
           alignItems: "center",
+          p: "10px",
         }}
       >
         <Typography
@@ -50,9 +51,10 @@ const LiveReport = ({ news }: { news: string[] }) => {
             textAlign: "center",
             width: "100%",
             m: "auto 0",
-            color: "common.black",
+            color: "primary.main",
             textTransform: "uppercase",
             fontWeight: 600,
+            fontSize: { md: "16px", xs: "14px" },
           }}
         >
           Live Report
@@ -61,22 +63,28 @@ const LiveReport = ({ news }: { news: string[] }) => {
       <Box
         sx={{
           width: "calc(100% - 170px)",
-          height: "100%",
+          height: { md: "100%", xs: "60px" },
           display: "flex",
+          flexGrow: "inherit",
           justifyContent: "center",
           alignItems: "center",
-          bgcolor: "background.paper",
+          bgcolor: "rgba(255,255,255,0.05)",
         }}
       >
-        <Typography variant="body1" sx={{ textAlign: "center", flex: 1, mx: 2 }}>
+        <Typography
+          variant="body1"
+          sx={{ textAlign: "center", flex: 1, mx: 2, fontSize: { md: "16px", xs: "14px" } }}
+        >
           {news[currentIndex]}
         </Typography>
-        <Box sx={{ display: "flex", flexDirection: "column", alignItems: "space-between" }}>
+        <Box
+          sx={{ display: "flex", flexDirection: "column", alignItems: "space-between", p: "8px" }}
+        >
           <IconButton onClick={goToPrevious} sx={{ p: 0, width: "24px", height: "24px" }}>
-            <KeyboardArrowUp sx={{ color: "white", p: 0 }} />
+            <KeyboardArrowUp sx={{ color: "primary.main", p: 0 }} />
           </IconButton>
           <IconButton onClick={goToNext} sx={{ p: 0, width: "24px", height: "24px" }}>
-            <KeyboardArrowDown sx={{ color: "white", p: 0 }} />
+            <KeyboardArrowDown sx={{ color: "primary.main", p: 0 }} />
           </IconButton>
         </Box>
       </Box>
