@@ -16,8 +16,8 @@ export default function TodaysGames({ games }: Props) {
           flex: 1,
         }}
       >
-        {games.map((game) => (
-          <TodayGameItem game={game} />
+        {games.map((game, index) => (
+          <TodayGameItem game={game} key={`today-game-${index}`} />
         ))}
       </Box>
     </Box>

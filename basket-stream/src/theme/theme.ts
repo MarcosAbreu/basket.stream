@@ -26,8 +26,8 @@ const theme = createTheme({
       white: "#fff",
     },
     grey: {
-      50: "#E5E5E7",
-      100: "#5C5C5C",
+      50: "#0F0F0F",
+      100: "#121212",
       200: "#494949",
       300: "#6E7278",
       400: "#F3F3F3",
@@ -35,7 +35,7 @@ const theme = createTheme({
     custom: {
       lightBlue: "#e1f5fe",
       lightGreen: "#e8f5e8",
-      blue: "#0d47a1",
+      softBlack: "#181818",
       green: "#1b5e20",
     },
   },
