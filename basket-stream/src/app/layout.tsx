@@ -4,7 +4,6 @@ import "./globals.css";
 import theme from "@/theme/theme";
 import ReactQueryProvider from "@/provider/ReactQueryProvider";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { url } from "inspector";
 
 export const metadata: Metadata = {
   title: {
@@ -31,15 +30,20 @@ export default function RootLayout({
               md: "cover",
             },
             backgroundPosition: "center",
-            // Default mobile background for portrait mode
+            backgroundAttachment: "fixed",
             backgroundImage: {
               xs: "url('/background-mobile.webp')",
               md: "url('/background.webp')",
             },
-            // Specific style for mobile landscape to use the desktop image
             "@media (orientation: landscape) and (max-height: 600px)": {
               backgroundImage: "url('/background.webp')",
             },
+            width: "100%", // Ensure the container spans the full viewport width
+            maxWidth: "100vw", // Prevents horizontal overflow
+            minHeight: "100vh", // Ensures the container covers the full viewport height
+            overflowX: "hidden", // Prevents content from overflowing horizontally
+            display: "flex", // Allows for flexible layout adjustments
+            flexDirection: "column",
           }}
         >
           <ReactQueryProvider>

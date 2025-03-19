@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import theme from "@/theme/theme";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 const pages = [
   { title: "standings", path: "/standings" },
@@ -48,12 +49,13 @@ function Header() {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
         bgcolor: "transparent",
         boxShadow: 0,
-        height: "80px",
+        height: { md: "80px", xs: "60px" },
         width: "100vw",
+        overflow: "hidden",
       }}
     >
       <Container disableGutters maxWidth={false}>
@@ -76,7 +78,7 @@ function Header() {
               zIndex: 10,
             }}
           >
-            <a
+            <Link
               href="/"
               style={{
                 display: "flex",
@@ -133,7 +135,7 @@ function Header() {
                   Stream
                 </h1>
               </Box>
-            </a>
+            </Link>
           </Box>
 
           <Box
