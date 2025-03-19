@@ -2,6 +2,9 @@
 
 const nextConfig = {
   reactStrictMode: false,
+  experimental: {
+    appDir: true,
+  },
 };
 
 export default nextConfig;
