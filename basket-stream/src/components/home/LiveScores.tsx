@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import { Box, Typography, IconButton, Avatar, Divider } from "@mui/material";
+import { Box, Typography, IconButton, Divider } from "@mui/material";
 import { ChevronLeftOutlined, ChevronRightOutlined } from "@mui/icons-material";
 import Image from "next/image";
 

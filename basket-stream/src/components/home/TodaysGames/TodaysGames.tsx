@@ -9,7 +9,7 @@ export default function TodaysGames({ games }: Props) {
   return (
     <Box sx={{ display: "flex", flex: 1, flexDirection: "column", gap: "20px" }}>
       <Typography sx={{ color: "white", fontWeight: 600, fontSize: "26px" }}>
-        Today's Games
+        Today&apos;s Games
       </Typography>
       <Box
         sx={{

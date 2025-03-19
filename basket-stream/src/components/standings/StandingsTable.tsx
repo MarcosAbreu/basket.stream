@@ -1,6 +1,5 @@
 import {
   Box,
-  Divider,
   Paper,
   Table,
   TableBody,
@@ -11,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import StandingsPositionChange from "./StandingsPositionChange";
 import StandingsSpots from "./StandingsSpots";
 

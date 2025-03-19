@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import theme from "@/theme/theme";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 const pages = [
   { title: "standings", path: "/standings" },
@@ -77,7 +78,7 @@ function Header() {
               zIndex: 10,
             }}
           >
-            <a
+            <Link
               href="/"
               style={{
                 display: "flex",
@@ -134,7 +135,7 @@ function Header() {
                   Stream
                 </h1>
               </Box>
-            </a>
+            </Link>
           </Box>
 
           <Box

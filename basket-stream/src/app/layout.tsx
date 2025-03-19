@@ -4,7 +4,6 @@ import "./globals.css";
 import theme from "@/theme/theme";
 import ReactQueryProvider from "@/provider/ReactQueryProvider";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { url } from "inspector";
 
 export const metadata: Metadata = {
   title: {

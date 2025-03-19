@@ -1,30 +1,21 @@
 import React from "react";
 import "./Bracket.css"; // Import CSS for styling
 
-const playoffData = [
-  {
-    round: "Quarterfinals",
-    matches: [
-      { id: 1, teams: ["Team A", "Team B"], scores: [1, 0], winner: "Team A" },
-      { id: 2, teams: ["Team C", "Team D"], scores: [2, 3], winner: "Team D" },
-      { id: 3, teams: ["Team E", "Team F"], scores: [1, 2], winner: "Team F" },
-      { id: 4, teams: ["Team G", "Team H"], scores: [2, 0], winner: "Team G" },
-    ],
-  },
-  {
-    round: "Semifinals",
-    matches: [
-      { id: 5, teams: ["Team A", "Team D"], scores: [1, 2], winner: "Team D" },
-      { id: 6, teams: ["Team F", "Team G"], scores: [1, 0], winner: "Team F" },
-    ],
-  },
-  {
-    round: "Finals",
-    matches: [{ id: 7, teams: ["Team D", "Team F"], scores: [0, 0], winner: null }],
-  },
-];
+type Match = {
+  id: number;
+  teams: [string, string]; // Tuple for exactly two teams
+  scores: [number, number]; // Tuple for exactly two scores
+  winner: string | null; // Null for cases where there's no winner yet
+};
 
-const Brackets = ({ data }: { data: typeof playoffData }) => {
+type PlayoffRound = {
+  round: string;
+  matches: Match[];
+};
+
+export type PlayoffDataType = PlayoffRound[];
+
+const Brackets = ({ data }: { data: PlayoffDataType }) => {
   return (
     <div className="bracket-container">
       {data.map((round, roundIndex) => (

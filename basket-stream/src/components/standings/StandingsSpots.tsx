@@ -1,8 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import Brackets from "./Brackets/Brackets";
+import { PlayoffDataType } from "./Brackets/Brackets";
 
-const playoffData = [
+const playoffData: PlayoffDataType = [
   {
     round: "Quarterfinals",
     matches: [
