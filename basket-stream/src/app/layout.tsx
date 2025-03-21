@@ -4,6 +4,7 @@ import "./globals.css";
 import theme from "@/theme/theme";
 import ReactQueryProvider from "@/provider/ReactQueryProvider";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import Header from "@/components/common/Header/Header";
 
 export const metadata: Metadata = {
   title: {
@@ -38,17 +39,24 @@ export default function RootLayout({
             "@media (orientation: landscape) and (max-height: 600px)": {
               backgroundImage: "url('/background.webp')",
             },
-            width: "100%", // Ensure the container spans the full viewport width
-            maxWidth: "100vw", // Prevents horizontal overflow
-            minHeight: "100vh", // Ensures the container covers the full viewport height
-            overflowX: "hidden", // Prevents content from overflowing horizontally
-            display: "flex", // Allows for flexible layout adjustments
+            width: "100%",
+            display: "flex",
             flexDirection: "column",
           }}
         >
           <ReactQueryProvider>
             <ReactQueryDevtools />
-            <ThemeProvider theme={theme}>{children}</ThemeProvider>
+            <ThemeProvider theme={theme}>
+              <Header />
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  overflowY: "auto", // Apply scroll to the content area
+                }}
+              >
+                {children}
+              </Box>
+            </ThemeProvider>
           </ReactQueryProvider>
         </Box>
       </body>

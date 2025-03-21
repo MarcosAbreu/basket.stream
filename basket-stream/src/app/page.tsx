@@ -20,7 +20,6 @@ export default function Home() {
         pt: { md: "80px", xs: "0" },
       }}
     >
-      <Header />
       <HomeContainer />
     </Box>
   );

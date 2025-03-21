@@ -21,7 +21,6 @@ export default function Page() {
         p: "80px 0",
       }}
     >
-      <Header />
       <StandingsContainer />
     </Box>
   );
