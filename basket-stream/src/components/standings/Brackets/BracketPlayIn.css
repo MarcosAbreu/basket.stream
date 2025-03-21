@@ -1,0 +1,65 @@
+.playin-brackets {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 1000px;
+}
+
+.playin-brackets__bracket-body {
+  height: 100%;
+  margin-left: 50px;
+}
+.playin-bracket-grid {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 150px;
+}
+.playin-bracket-column-1st-round {
+  display: grid;
+  grid-template-rows: 80px 100px 80px;
+}
+.playin-bracket-1st-round-match {
+  display: flex;
+  flex-direction: row;
+}
+.playin-bracket-1st-round-match_lines {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 40px 40px;
+}
+.playin-bracket-1st-round-slot {
+  width: 250px;
+  display: grid;
+  grid-template-columns: 75px 125px 50px;
+  grid-template-rows: 45px 35px 20px;
+}
+.box-1st-round-grid-1-2 {
+  grid-column: 2/4;
+}
+
+.playin-bracket-column-2nd-round {
+  display: grid;
+  grid-template-rows: 100px 80px 80px;
+}
+.playin-bracket-2nd-round-match {
+  display: flex;
+  flex-direction: row;
+}
+.playin-bracket-2nd-round-match_lines {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 40px 40px;
+}
+.playin-bracket-2nd-round-slot {
+  width: 250px;
+  display: grid;
+  grid-template-rows: 40px 40px;
+}
+.playin-lines-box {
+  box-sizing: border-box;
+}
+
+.playin-bracket-column-qualifyers {
+  width: 250px;
+  display: grid;
+  grid-template-rows: 100px 80px 80px;
+}
