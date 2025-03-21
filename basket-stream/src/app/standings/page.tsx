@@ -1,4 +1,3 @@
-import Header from "@/components/common/Header/Header";
 import React from "react";
 import type { Metadata } from "next";
 import { Box } from "@mui/material";
