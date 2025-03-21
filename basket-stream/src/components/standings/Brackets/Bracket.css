@@ -1,50 +1,100 @@
-.bracket-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.round {
+.brackets {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 20px 0;
+  width: 1000px;
 }
 
-.match-container {
-  position: relative;
-  margin: 20px 0;
+.brackets__bracket-head {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
 }
 
-.match {
-  border: 1px solid #ccc;
-  padding: 10px;
-  background: #f9f9f9;
+.bracket-head__title {
+  width: 100px;
+  font-size: 16px;
+  margin: 0 auto;
   text-align: center;
-  position: relative;
-  z-index: 2;
 }
-
-.team {
+.brackets__bracket-body {
+  height: 100%;
+  margin-left: 50px;
+}
+.bracket-grid {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 150px;
+}
+.bracket-column-1st-round {
+  display: grid;
+  grid-template-rows: 90px 90px 90px 80px;
+}
+.bracket-1st-round-match {
   display: flex;
-  justify-content: space-between;
-  margin: 5px 0;
+  flex-direction: row;
 }
-
-.score {
-  margin-left: 10px;
+.bracket-1st-round-match_lines {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 40px 40px 10px;
 }
-
-.line {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  width: 50px;
-  border-left: 2px solid #ccc;
-  border-top: 2px solid #ccc;
-  z-index: 1;
+.bracket-column-conf-semi {
+  margin: 48px 0;
+  display: grid;
+  grid-template-rows: 80px 100px 80px;
 }
-
-.round + .round .match-container .line {
-  border-top: none;
-  border-bottom: 2px solid #ccc;
+.bracket-conf-semi-match {
+  display: flex;
+  flex-direction: row;
+}
+.bracket-conf-semi-match_lines {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 40px 40px;
+}
+.bracket-conf-semi-match_lines-long {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 50px;
+}
+.bracket-conf-semi-slot {
+  width: 150px;
+}
+.bracket-column-conf-finals {
+  margin: 138px 0;
+}
+.bracket-conf-finals-match {
+  display: flex;
+  flex-direction: row;
+}
+.bracket-conf-finals-match_lines {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 40px 40px;
+}
+.bracket-column-nba-finals {
+  margin: 138px 0;
+}
+.bracket-nba-finals-match {
+  display: flex;
+  flex-direction: row;
+}
+.bracket-nba-finals-match_lines {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 40px 40px;
+}
+.lines-box {
+  border: none #000000 2px;
+  box-sizing: border-box;
+}
+.bracket-body__first-round {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bracket-body__conf-semi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 104px;
 }

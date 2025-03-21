@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import React, { useMemo } from "react";
 import StandingsPositionChange from "./StandingsPositionChange";
 import StandingsSpots from "./StandingsSpots";
 
@@ -49,11 +49,16 @@ type Data = {
 };
 
 interface Props {
-  title: string;
+  conference: "East" | "West";
   data: Data[];
 }
 
-export default function StandingsTable({ title, data }: Props) {
+export default function StandingsTable({ conference, data }: Props) {
+  const title = useMemo(
+    () => (conference === "West" ? "Western Conference" : "Eastern Conference"),
+    [conference]
+  );
+
   return (
     <Paper sx={{ width: "100%", overflow: "hidden" }}>
       <TableContainer sx={{ position: "relative" }}>
@@ -65,8 +70,20 @@ export default function StandingsTable({ title, data }: Props) {
             width: "100%",
           }}
         >
-          <StandingsSpots rows={6} bgColor="primary.light" color="common.black" label="Playoffs" />
-          <StandingsSpots rows={4} bgColor="common.black" color="primary.light" label="Play In" />
+          <StandingsSpots
+            rows={6}
+            bgColor="primary.light"
+            color="common.black"
+            label="Playoffs"
+            conference={conference}
+          />
+          <StandingsSpots
+            rows={4}
+            bgColor="common.white"
+            color="common.black"
+            label="Play In"
+            conference={conference}
+          />
         </Box>
         <Table stickyHeader>
           <TableHead>

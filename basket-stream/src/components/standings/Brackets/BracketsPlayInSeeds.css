@@ -1,0 +1,38 @@
+.playin-seed {
+  position: relative;
+  width: 150px;
+  height: 80px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+}
+
+.playin-seed__container {
+  background: #000000;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.playin-seed__header {
+  display: flex;
+  justify-content: center;
+  height: 37px;
+}
+
+.playin-seed__team {
+  display: flex;
+  height: 37px;
+  background-color: #494949;
+}
+.playin-seed__team-container {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playin-seed__team-logo {
+  flex: 1;
+}

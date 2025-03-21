@@ -2,12 +2,12 @@ import React from "react";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 
 interface Props {
-  value: string;
-  setValue: (newValue: string) => void;
+  value: "East" | "West";
+  setValue: (newValue: "East" | "West") => void;
 }
 
 export default function ToggleConference({ value, setValue }: Props) {
-  const handleChange = (event: React.MouseEvent<HTMLElement>, newValue: string | null) => {
+  const handleChange = (event: React.MouseEvent<HTMLElement>, newValue: "East" | "West" | null) => {
     if (newValue !== null) {
       setValue(newValue);
     }
@@ -25,7 +25,7 @@ export default function ToggleConference({ value, setValue }: Props) {
       }}
     >
       <ToggleButton
-        value="east"
+        value="East"
         sx={{
           borderRadius: "12px 0 0 12px",
           bgcolor: "custom.softBlack",
@@ -44,7 +44,7 @@ export default function ToggleConference({ value, setValue }: Props) {
         Eastern Conference
       </ToggleButton>
       <ToggleButton
-        value="west"
+        value="West"
         sx={{
           borderRadius: "0 12px 12px 0",
           bgcolor: "custom.softBlack",
