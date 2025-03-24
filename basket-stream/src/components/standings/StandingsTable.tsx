@@ -60,31 +60,31 @@ export default function StandingsTable({ conference, data }: Props) {
   );
 
   return (
-    <Paper sx={{ width: "100%", overflow: "hidden" }}>
+    <Paper sx={{ width: "100%", overflow: "hidden", position: "relative" }}>
+      <Box
+        sx={{
+          position: "absolute",
+          top: "53px",
+          display: { xs: "none", md: "block" },
+          width: "100%",
+        }}
+      >
+        <StandingsSpots
+          rows={6}
+          bgColor="primary.light"
+          color="common.black"
+          label="Playoffs"
+          conference={conference}
+        />
+        <StandingsSpots
+          rows={4}
+          bgColor="common.white"
+          color="common.black"
+          label="Play In"
+          conference={conference}
+        />
+      </Box>
       <TableContainer sx={{ position: "relative" }}>
-        <Box
-          sx={{
-            position: "absolute",
-            top: "53px",
-            display: { xs: "none", md: "block" },
-            width: "100%",
-          }}
-        >
-          <StandingsSpots
-            rows={6}
-            bgColor="primary.light"
-            color="common.black"
-            label="Playoffs"
-            conference={conference}
-          />
-          <StandingsSpots
-            rows={4}
-            bgColor="common.white"
-            color="common.black"
-            label="Play In"
-            conference={conference}
-          />
-        </Box>
         <Table stickyHeader>
           <TableHead>
             <TableRow>

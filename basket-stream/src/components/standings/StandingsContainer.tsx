@@ -24,7 +24,7 @@ export default function StandingsContainer() {
   }, []);
 
   return (
-    <Box sx={{ width: { md: "80%", xs: "100%", height: "100%" } }}>
+    <Box sx={{ width: { md: "80%", xs: "100%" } }}>
       <Box
         sx={{
           display: "flex",

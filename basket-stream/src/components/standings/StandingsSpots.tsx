@@ -747,7 +747,7 @@ export default function StandingsSpots({ rows, bgColor, color, label, conference
       <Box
         sx={{
           flex: 1,
-          display: "flex",
+          display: expand ? "flex" : "none",
           justifyContent: "center",
           alignItems: "center",
           opacity: expand ? 1 : 0,
