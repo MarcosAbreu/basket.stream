@@ -17,7 +17,7 @@ export default function Page() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        p: "80px 0",
+        p: "30px 0",
       }}
     >
       <StandingsContainer />

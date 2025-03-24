@@ -16,7 +16,6 @@ export default function Home() {
         height: "100vh",
         display: "flex",
         flexDirection: "column",
-        pt: { md: "80px", xs: "0" },
       }}
     >
       <HomeContainer />
