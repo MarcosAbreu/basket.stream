@@ -24,12 +24,14 @@ interface Props {
 
 export default function TodayGameItem({ game }: Props) {
   return (
-    <Box sx={{ display: "flex", flexDirection: "row", flex: 1 }}>
+    <Box sx={{ display: "flex", flexDirection: "row" }}>
       <Box
         sx={{
           position: "relative",
-          width: "140px",
-          height: "140px",
+          maxWidth: "140px",
+          minWidth: "80px",
+          height: "100px",
+          flex: 1,
         }}
       >
         <Image
@@ -42,7 +44,6 @@ export default function TodayGameItem({ game }: Props) {
       <Box
         sx={{
           flex: 1,
-          width: "100%",
           minWidth: "100px",
           display: "flex",
           justifyContent: "center",
@@ -69,8 +70,11 @@ export default function TodayGameItem({ game }: Props) {
       <Box
         sx={{
           position: "relative",
-          width: "140px",
-          height: "140px",
+          maxWidth: "140px",
+          minWidth: "80px",
+          minHeight: "80px",
+          height: "100px",
+          flex: 1,
         }}
       >
         <Image

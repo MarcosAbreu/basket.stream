@@ -11,7 +11,7 @@ import todayGamesMocks from "@/mock/todaysGames.json";
 
 export default function HomeContainer() {
   return (
-    <Box sx={{ width: "100%", p: { md: "40px 70px", xs: "70px 0" } }}>
+    <Box sx={{ width: "100%", p: { md: "40px 70px", xs: "20px 0" }, mb: { md: 0, xs: "200px" } }}>
       <Box
         sx={{
           display: "flex",
@@ -31,8 +31,12 @@ export default function HomeContainer() {
           pt: { md: "70px", xs: "40px" },
         }}
       >
-        <ImageSlider slides={imageMocks} width={1200} height={600} />
-        <TodaysGames games={todayGamesMocks} />
+        <Box sx={{ width: { md: "70%", xs: "100%" } }}>
+          <ImageSlider slides={imageMocks} />
+        </Box>
+        <Box sx={{ width: { md: "30%" }, height: { md: "500px", xs: "700px" } }}>
+          <TodaysGames games={todayGamesMocks} />
+        </Box>
       </Box>
     </Box>
   );
