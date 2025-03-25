@@ -1,0 +1,48 @@
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d89b00;
+  border: "solid 1px #000";
+  cursor: "pointer";
+}
+
+/* Custom Navigation Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #d89b00; /* Change arrow color */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(255, 255, 255, 0.8); /* Light background on hover */
+  color: black;
+}
+
+/* Adjust positioning */
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+/* Remove default arrow icon (optional, if you want to add a custom icon) */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px; /* Change arrow size */
+}
