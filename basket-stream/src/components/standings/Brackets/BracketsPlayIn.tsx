@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import "./BracketPlayIn.css";
 import BracketsMatches, { matchType } from "./BracketsMatches/BracketsMatches";
 import BracketsPlatInSeeds from "./BracketsPlayInSeeds";
@@ -29,10 +29,6 @@ const BracketsPlayIn = ({ data, selectedConference }: Props) => {
   const secondRound = useMemo(() => {
     return rounds.filter((round) => round.round === "Second Round");
   }, rounds);
-
-  useEffect(() => {
-    console.log("firstRound", firstRound);
-  }, [firstRound]);
 
   return (
     <div className="playin-brackets">
