@@ -1,51 +1,43 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./ImageSlider.css";
 
 interface Props {
   slides: { image: string; title: string; description: string; link: string }[];
-  width: number; // Width of the image container
-  height: number; // Height of the image container
 }
 
-const ImageSlider = ({ slides, width, height }: Props) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Automatically switch slides every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(interval); // Clear interval on component unmount
-  }, [slides.length]);
-
+const ImageSlider = ({ slides }: Props) => {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '"></span>';
+    },
+  };
   return (
     <Box>
-      <Box
-        sx={{
-          position: "relative",
-          width: { xs: "100%", md: `${width}px` },
-          height: { xs: "100vw", md: `${height}px` },
-          overflow: "hidden",
-        }}
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        slidesPerView={1}
+        navigation
+        pagination={pagination}
+        autoplay={{ delay: 10000 }}
+        loop
+        className={`rounded-xl `}
       >
-        <Box
-          sx={{
-            display: "flex",
-            transition: "transform 0.5s ease",
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
-        >
-          {slides.map((item, index) => (
+        {slides.map((item, index) => (
+          <SwiperSlide key={`slider-${index}`}>
             <Box
-              key={index}
               sx={{
                 position: "relative",
-                flexShrink: 0,
-                width: { md: width, xs: "100vw" },
-                height: { md: height, xs: "100vw" },
+                maxWidth: "1600px",
+                height: "500px",
               }}
             >
               <Box
@@ -111,51 +103,11 @@ const ImageSlider = ({ slides, width, height }: Props) => {
                   </Box>
                 </Box>
               </Box>
-              {/* Slide Image */}
-              <Image src={item.image} alt={`Slide ${index}`} fill style={{ objectFit: "cover" }} />
+              <Image src={item.image} alt={item.title} fill style={{ objectFit: "cover" }} />
             </Box>
-          ))}
-        </Box>
-
-        {/* Dots Container */}
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: "10px",
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            zIndex: 11,
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              width: "60%",
-              gap: "10px",
-              justifyContent: "space-between",
-              padding: "0 10px",
-            }}
-          >
-            {slides.map((_, index) => (
-              <Box
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                sx={{
-                  flexGrow: 1,
-                  height: "8px",
-                  borderRadius: "4px",
-                  backgroundColor: currentIndex === index ? "primary.main" : "background.paper",
-                  border: "solid 1px #000",
-                  opacity: currentIndex === index ? 1 : 0.5,
-                  cursor: "pointer",
-                  transition: "background-color 0.3s ease",
-                }}
-              />
-            ))}
-          </Box>
-        </Box>
-      </Box>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </Box>
   );
 };

@@ -37,5 +37,31 @@
     "place": "Staple Center",
     "time": "2024-11-20T07:30:00Z",
     "url": "https://nba.com/game/lal-vs-bos"
+  },
+  {
+    "teamAway": {
+      "logo": "/mock/teamLogos/today-game-LAL.png",
+      "teamName": "Los Angeles Lakers"
+    },
+    "teamHome": {
+      "logo": "/mock/teamLogos/today-game-BOS.png",
+      "teamName": "Boston Celtics"
+    },
+    "place": "Staple Center",
+    "time": "2024-11-20T07:30:00Z",
+    "url": "https://nba.com/game/lal-vs-bos"
+  },
+  {
+    "teamAway": {
+      "logo": "/mock/teamLogos/today-game-LAL.png",
+      "teamName": "Los Angeles Lakers"
+    },
+    "teamHome": {
+      "logo": "/mock/teamLogos/today-game-BOS.png",
+      "teamName": "Boston Celtics"
+    },
+    "place": "Staple Center",
+    "time": "2024-11-20T07:30:00Z",
+    "url": "https://nba.com/game/lal-vs-bos"
   }
 ]
