@@ -17,7 +17,7 @@ export default function ConferenceTeamsContainer({ conference, teams }: Props) {
         gridTemplateColumns: { md: "repeat(3,140px)", xs: "repeat(3,31%)" },
         gridTemplateRows: { md: "repeat(5,140px)", xs: "repeat(5,130px)" },
         gap: "10px",
-        p: "10px ",
+        p: { md: "30px", xs: "10px" },
         justifyContent: {
           md: conference === "West" ? "flex-start" : "flex-end",
           xs: "space-between",
