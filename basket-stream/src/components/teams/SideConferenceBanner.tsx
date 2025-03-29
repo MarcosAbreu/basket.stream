@@ -35,7 +35,15 @@ export default function SideConferenceBanner({ conference }: Props) {
   const conferenceInfo = conferenceData.find((data) => data.conference === conference)?.data;
 
   return (
-    <Box sx={{ width: "100%", maxWidth: "330px", height: "100%", position: "relative" }}>
+    <Box
+      sx={{
+        width: "100%",
+        maxWidth: "330px",
+        height: "100%",
+        position: "relative",
+        display: { xs: "none", md: "block" },
+      }}
+    >
       {conferenceInfo && (
         <Image
           src={conferenceInfo?.bannerSrc}

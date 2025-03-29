@@ -11,14 +11,17 @@ export default function ConferenceTeamsContainer({ conference, teams }: Props) {
   return (
     <Box
       sx={{
-        width: "100%",
+        width: { md: "100%", xs: "100vw" },
         height: "100%",
         display: "grid",
-        gridTemplateColumns: "repeat(3,140px)",
-        gridTemplateRows: "repeat(5,140px)",
+        gridTemplateColumns: { md: "repeat(3,140px)", xs: "repeat(3,31%)" },
+        gridTemplateRows: { md: "repeat(5,140px)", xs: "repeat(5,130px)" },
         gap: "10px",
-        m: "30px ",
-        justifyContent: conference === "West" ? "flex-start" : "flex-end",
+        p: "10px ",
+        justifyContent: {
+          md: conference === "West" ? "flex-start" : "flex-end",
+          xs: "space-between",
+        },
       }}
     >
       {teams && teams.length > 0 && teams.map((team) => <TeamCard key={team.id} team={team} />)}

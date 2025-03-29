@@ -19,9 +19,9 @@ export default function TeamsContainer() {
       <Box
         sx={{
           width: "100%",
-          height: "800px",
+          height: { md: "800px", xs: "100%" },
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { md: "row", xs: "column" },
         }}
       >
         <ConferenceContainer conference="West">

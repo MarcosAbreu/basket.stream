@@ -43,7 +43,7 @@ export default function TeamCard({ team }: Props) {
       <Box
         sx={{
           width: "100%",
-          height: "50px",
+          height: { md: "50px", xs: "30px" },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -53,7 +53,7 @@ export default function TeamCard({ team }: Props) {
         <Typography
           sx={{
             textAlign: "center",
-            fontSize: "14px",
+            fontSize: { md: "14px", xs: "12px" },
             fontWeight: 500,
           }}
         >
