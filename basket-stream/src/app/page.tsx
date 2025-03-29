@@ -13,7 +13,7 @@ export default function Home() {
     <Box
       sx={{
         width: "100%",
-        height: "100vh",
+        minHeight: "calc(100vh - 80px)",
         display: "flex",
         flexDirection: "column",
       }}
