@@ -3,11 +3,10 @@ import React from "react";
 import TeamCard, { TeamType } from "./TeamCard";
 
 interface Props {
-  conference: "East" | "West";
   teams: TeamType[];
 }
 
-export default function ConferenceTeamsContainer({ conference, teams }: Props) {
+export default function ConferenceTeamsContainer({ teams }: Props) {
   return (
     <Box
       sx={{

@@ -27,13 +27,11 @@ export default function TeamsContainer() {
         <ConferenceContainer conference="West">
           <SideConferenceBanner conference="West" />
           <ConferenceTeamsContainer
-            conference="West"
             teams={mockTeams.filter((team) => team.conference === "West")}
           />
         </ConferenceContainer>
         <ConferenceContainer conference="East">
           <ConferenceTeamsContainer
-            conference="East"
             teams={mockTeams.filter((team) => team.conference === "East")}
           />
           <SideConferenceBanner conference="East" />
