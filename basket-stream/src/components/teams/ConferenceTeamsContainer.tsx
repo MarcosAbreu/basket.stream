@@ -19,7 +19,7 @@ export default function ConferenceTeamsContainer({ conference, teams }: Props) {
         gap: "10px",
         p: { md: "30px", xs: "10px" },
         justifyContent: {
-          md: conference === "West" ? "flex-start" : "flex-end",
+          md: "center",
           xs: "space-between",
         },
       }}
