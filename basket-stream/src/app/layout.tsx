@@ -51,7 +51,7 @@ export default function RootLayout({
               <Box
                 sx={{
                   flexGrow: 1,
-                  overflowY: "auto", // Apply scroll to the content area
+                  overflowY: "auto",
                 }}
               >
                 {children}

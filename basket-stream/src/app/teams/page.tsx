@@ -1,24 +1,27 @@
+import React from "react";
 import type { Metadata } from "next";
-
 import { Box } from "@mui/material";
-import HomeContainer from "@/components/home/HomeContainer";
+import TeamsContainer from "@/components/teams/TeamsContainer";
 
 export const metadata: Metadata = {
-  title: "Basket.Stream",
-  description: "Basket.Stream",
+  title: "Teams",
+  description: "Teams",
 };
 
-export default function Home() {
+export default function page() {
   return (
     <Box
       sx={{
         width: "100%",
+        height: "100%",
         minHeight: "calc(100vh - 80px)",
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
+        mt: "20px",
       }}
     >
-      <HomeContainer />
+      <TeamsContainer />
     </Box>
   );
 }

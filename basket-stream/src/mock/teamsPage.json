@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Atlanta Hawks",
+    "abbreviation": "ATL",
+    "conference": "East",
+    "division": "Southeast",
+    "full_name": "Atlanta Hawks",
+    "imageSrc": "/mock/teamLogos/team-logo-ATL.png",
+    "url": "/teams/ATL"
+  },
+  {
+    "id": 2,
+    "name": "Boston Celtics",
+    "abbreviation": "BOS",
+    "conference": "East",
+    "division": "Atlantic",
+    "full_name": "Boston Celtics",
+    "imageSrc": "/mock/teamLogos/team-logo-BOS.png",
+    "url": "/teams/BOS"
+  },
+  {
+    "id": 3,
+    "name": "Brooklyn Nets",
+    "abbreviation": "BKN",
+    "conference": "East",
+    "division": "Atlantic",
+    "full_name": "Brooklyn Nets",
+    "imageSrc": "/mock/teamLogos/team-logo-BKN.png",
+    "url": "/teams/BKN"
+  },
+  {
+    "id": 4,
+    "name": "Charlotte Hornets",
+    "abbreviation": "CHA",
+    "conference": "East",
+    "division": "Southeast",
+    "full_name": "Charlotte Hornets",
+    "imageSrc": "/mock/teamLogos/team-logo-CHA.png",
+    "url": "/teams/CHA"
+  },
+  {
+    "id": 5,
+    "name": "Chicago Bulls",
+    "abbreviation": "CHI",
+    "conference": "East",
+    "division": "Central",
+    "full_name": "Chicago Bulls",
+    "imageSrc": "/mock/teamLogos/team-logo-CHI.png",
+    "url": "/teams/CHI"
+  },
+  {
+    "id": 6,
+    "name": "Cleveland Cavaliers",
+    "abbreviation": "CLE",
+    "conference": "East",
+    "division": "Central",
+    "full_name": "Cleveland Cavaliers",
+    "imageSrc": "/mock/teamLogos/team-logo-CLE.png",
+    "url": "/teams/CLE"
+  },
+  {
+    "id": 7,
+    "name": "Dallas Mavericks",
+    "abbreviation": "DAL",
+    "conference": "West",
+    "division": "Southwest",
+    "full_name": "Dallas Mavericks",
+    "imageSrc": "/mock/teamLogos/team-logo-DAL.png",
+    "url": "/teams/DAL"
+  },
+  {
+    "id": 8,
+    "name": "Denver Nuggets",
+    "abbreviation": "DEN",
+    "conference": "West",
+    "division": "Northwest",
+    "full_name": "Denver Nuggets",
+    "imageSrc": "/mock/teamLogos/team-logo-DEN.png",
+    "url": "/teams/DEN"
+  },
+  {
+    "id": 9,
+    "name": "Detroit Pistons",
+    "abbreviation": "DET",
+    "conference": "East",
+    "division": "Central",
+    "full_name": "Detroit Pistons",
+    "imageSrc": "/mock/teamLogos/team-logo-DET.png",
+    "url": "/teams/DET"
+  },
+  {
+    "id": 10,
+    "name": "Golden State Warriors",
+    "abbreviation": "GSW",
+    "conference": "West",
+    "division": "Pacific",
+    "full_name": "Golden State Warriors",
+    "imageSrc": "/mock/teamLogos/team-logo-GSW.png",
+    "url": "/teams/GSW"
+  },
+  {
+    "id": 11,
+    "name": "Houston Rockets",
+    "abbreviation": "HOU",
+    "conference": "West",
+    "division": "Southwest",
+    "full_name": "Houston Rockets",
+    "imageSrc": "/mock/teamLogos/team-logo-HOU.png",
+    "url": "/teams/HOU"
+  },
+  {
+    "id": 12,
+    "name": "Indiana Pacers",
+    "abbreviation": "IND",
+    "conference": "East",
+    "division": "Central",
+    "full_name": "Indiana Pacers",
+    "imageSrc": "/mock/teamLogos/team-logo-IND.png",
+    "url": "/teams/IND"
+  },
+  {
+    "id": 13,
+    "name": "Los Angeles Clippers",
+    "abbreviation": "LAC",
+    "conference": "West",
+    "division": "Pacific",
+    "full_name": "Los Angeles Clippers",
+    "imageSrc": "/mock/teamLogos/team-logo-LAC.png",
+    "url": "/teams/LAC"
+  },
+  {
+    "id": 14,
+    "name": "Los Angeles Lakers",
+    "abbreviation": "LAL",
+    "conference": "West",
+    "division": "Pacific",
+    "full_name": "Los Angeles Lakers",
+    "imageSrc": "/mock/teamLogos/team-logo-LAL.png",
+    "url": "/teams/LAL"
+  },
+  {
+    "id": 15,
+    "name": "Memphis Grizzlies",
+    "abbreviation": "MEM",
+    "conference": "West",
+    "division": "Southwest",
+    "full_name": "Memphis Grizzlies",
+    "imageSrc": "/mock/teamLogos/team-logo-MEM.png",
+    "url": "/teams/MEM"
+  },
+  {
+    "id": 16,
+    "name": "Miami Heat",
+    "abbreviation": "MIA",
+    "conference": "East",
+    "division": "Southeast",
+    "full_name": "Miami Heat",
+    "imageSrc": "/mock/teamLogos/team-logo-MIA.png",
+    "url": "/teams/MIA"
+  },
+  {
+    "id": 17,
+    "name": "Milwaukee Bucks",
+    "abbreviation": "MIL",
+    "conference": "East",
+    "division": "Central",
+    "full_name": "Milwaukee Bucks",
+    "imageSrc": "/mock/teamLogos/team-logo-MIL.png",
+    "url": "/teams/MIL"
+  },
+  {
+    "id": 18,
+    "name": "Minnesota Timberwolves",
+    "abbreviation": "MIN",
+    "conference": "West",
+    "division": "Northwest",
+    "full_name": "Minnesota Timberwolves",
+    "imageSrc": "/mock/teamLogos/team-logo-MIN.png",
+    "url": "/teams/MIN"
+  },
+  {
+    "id": 19,
+    "name": "New Orleans Pelicans",
+    "abbreviation": "NOP",
+    "conference": "West",
+    "division": "Southwest",
+    "full_name": "New Orleans Pelicans",
+    "imageSrc": "/mock/teamLogos/team-logo-NOP.png",
+    "url": "/teams/NOP"
+  },
+  {
+    "id": 20,
+    "name": "New York Knicks",
+    "abbreviation": "NYK",
+    "conference": "East",
+    "division": "Atlantic",
+    "full_name": "New York Knicks",
+    "imageSrc": "/mock/teamLogos/team-logo-NYK.png",
+    "url": "/teams/NYK"
+  },
+  {
+    "id": 21,
+    "name": "Oklahoma City Thunder",
+    "abbreviation": "OKC",
+    "conference": "West",
+    "division": "Northwest",
+    "full_name": "Oklahoma City Thunder",
+    "imageSrc": "/mock/teamLogos/team-logo-OKC.png",
+    "url": "/teams/OKC"
+  },
+  {
+    "id": 22,
+    "name": "Orlando Magic",
+    "abbreviation": "ORL",
+    "conference": "East",
+    "division": "Southeast",
+    "full_name": "Orlando Magic",
+    "imageSrc": "/mock/teamLogos/team-logo-ORL.png",
+    "url": "/teams/ORL"
+  },
+  {
+    "id": 23,
+    "name": "Philadelphia 76ers",
+    "abbreviation": "PHI",
+    "conference": "East",
+    "division": "Atlantic",
+    "full_name": "Philadelphia 76ers",
+    "imageSrc": "/mock/teamLogos/team-logo-PHI.png",
+    "url": "/teams/PHI"
+  },
+  {
+    "id": 24,
+    "name": "Phoenix Suns",
+    "abbreviation": "PHX",
+    "conference": "West",
+    "division": "Pacific",
+    "full_name": "Phoenix Suns",
+    "imageSrc": "/mock/teamLogos/team-logo-PHX.png",
+    "url": "/teams/PHX"
+  },
+  {
+    "id": 25,
+    "name": "Portland Trail Blazers",
+    "abbreviation": "POR",
+    "conference": "West",
+    "division": "Northwest",
+    "full_name": "Portland Trail Blazers",
+    "imageSrc": "/mock/teamLogos/team-logo-POR.png",
+    "url": "/teams/POR"
+  },
+  {
+    "id": 26,
+    "name": "Sacramento Kings",
+    "abbreviation": "SAC",
+    "conference": "West",
+    "division": "Pacific",
+    "full_name": "Sacramento Kings",
+    "imageSrc": "/mock/teamLogos/team-logo-SAC.png",
+    "url": "/teams/SAC"
+  },
+  {
+    "id": 27,
+    "name": "San Antonio Spurs",
+    "abbreviation": "SAS",
+    "conference": "West",
+    "division": "Southwest",
+    "full_name": "San Antonio Spurs",
+    "imageSrc": "/mock/teamLogos/team-logo-SAS.png",
+    "url": "/teams/SAS"
+  },
+  {
+    "id": 28,
+    "name": "Toronto Raptors",
+    "abbreviation": "TOR",
+    "conference": "East",
+    "division": "Atlantic",
+    "full_name": "Toronto Raptors",
+    "imageSrc": "/mock/teamLogos/team-logo-TOR.png",
+    "url": "/teams/TOR"
+  },
+  {
+    "id": 29,
+    "name": "Utah Jazz",
+    "abbreviation": "UTA",
+    "conference": "West",
+    "division": "Northwest",
+    "full_name": "Utah Jazz",
+    "imageSrc": "/mock/teamLogos/team-logo-UTA.png",
+    "url": "/teams/UTA"
+  },
+  {
+    "id": 30,
+    "name": "Washington Wizards",
+    "abbreviation": "WAS",
+    "conference": "East",
+    "division": "Southeast",
+    "full_name": "Washington Wizards",
+    "imageSrc": "/mock/teamLogos/team-logo-WAS.png",
+    "url": "/teams/WAS"
+  }
+]
