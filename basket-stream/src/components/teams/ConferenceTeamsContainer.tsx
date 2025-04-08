@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
-import TeamCard, { TeamType } from "./TeamCard";
+import TeamCard from "./TeamCard";
+import { TeamType } from "@/lib/types";
 
 interface Props {
   teams: TeamType[];

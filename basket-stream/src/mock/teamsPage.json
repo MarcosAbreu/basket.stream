@@ -6,8 +6,16 @@
     "conference": "East",
     "division": "Southeast",
     "full_name": "Atlanta Hawks",
-    "imageSrc": "/mock/teamLogos/team-logo-ATL.png",
-    "url": "/teams/ATL"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-ATL.png",
+      "banner_header": "/mock/teamBanners/banner-header-ATL.png",
+      "banner_side": "/mock/teamBanners/banner-side-ATL.png"
+    },
+    "store": {
+      "url": "/teams/ATL",
+      "banner_store": "/mock/teamStores/store-banner-ATL.png",
+      "name": "Atlanta Hawks Official Store"
+    }
   },
   {
     "id": 2,
@@ -16,8 +24,16 @@
     "conference": "East",
     "division": "Atlantic",
     "full_name": "Boston Celtics",
-    "imageSrc": "/mock/teamLogos/team-logo-BOS.png",
-    "url": "/teams/BOS"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-BOS.png",
+      "banner_header": "/mock/teamBanners/banner-header-BOS.png",
+      "banner_side": "/mock/teamBanners/banner-side-BOS.png"
+    },
+    "store": {
+      "url": "/teams/BOS",
+      "banner_store": "/mock/teamStores/store-banner-BOS.png",
+      "name": "Boston Celtics Official Store"
+    }
   },
   {
     "id": 3,
@@ -26,8 +42,16 @@
     "conference": "East",
     "division": "Atlantic",
     "full_name": "Brooklyn Nets",
-    "imageSrc": "/mock/teamLogos/team-logo-BKN.png",
-    "url": "/teams/BKN"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-BKN.png",
+      "banner_header": "/mock/teamBanners/banner-header-BKN.png",
+      "banner_side": "/mock/teamBanners/banner-side-BKN.png"
+    },
+    "store": {
+      "url": "/teams/BKN",
+      "banner_store": "/mock/teamStores/store-banner-BKN.png",
+      "name": "Brooklyn Nets Official Store"
+    }
   },
   {
     "id": 4,
@@ -36,8 +60,16 @@
     "conference": "East",
     "division": "Southeast",
     "full_name": "Charlotte Hornets",
-    "imageSrc": "/mock/teamLogos/team-logo-CHA.png",
-    "url": "/teams/CHA"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-CHA.png",
+      "banner_header": "/mock/teamBanners/banner-header-CHA.png",
+      "banner_side": "/mock/teamBanners/banner-side-CHA.png"
+    },
+    "store": {
+      "url": "/teams/CHA",
+      "banner_store": "/mock/teamStores/store-banner-CHA.png",
+      "name": "Charlotte Hornets Official Store"
+    }
   },
   {
     "id": 5,
@@ -46,8 +78,16 @@
     "conference": "East",
     "division": "Central",
     "full_name": "Chicago Bulls",
-    "imageSrc": "/mock/teamLogos/team-logo-CHI.png",
-    "url": "/teams/CHI"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-CHI.png",
+      "banner_header": "/mock/teamBanners/banner-header-CHI.png",
+      "banner_side": "/mock/teamBanners/banner-side-CHI.png"
+    },
+    "store": {
+      "url": "/teams/CHI",
+      "banner_store": "/mock/teamStores/store-banner-CHI.png",
+      "name": "Chicago Bulls Official Store"
+    }
   },
   {
     "id": 6,
@@ -56,8 +96,16 @@
     "conference": "East",
     "division": "Central",
     "full_name": "Cleveland Cavaliers",
-    "imageSrc": "/mock/teamLogos/team-logo-CLE.png",
-    "url": "/teams/CLE"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-CLE.png",
+      "banner_header": "/mock/teamBanners/banner-header-CLE.png",
+      "banner_side": "/mock/teamBanners/banner-side-CLE.png"
+    },
+    "store": {
+      "url": "/teams/CLE",
+      "banner_store": "/mock/teamStores/store-banner-CLE.png",
+      "name": "Cleveland Cavaliers Official Store"
+    }
   },
   {
     "id": 7,
@@ -66,8 +114,16 @@
     "conference": "West",
     "division": "Southwest",
     "full_name": "Dallas Mavericks",
-    "imageSrc": "/mock/teamLogos/team-logo-DAL.png",
-    "url": "/teams/DAL"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-DAL.png",
+      "banner_header": "/mock/teamBanners/banner-header-DAL.png",
+      "banner_side": "/mock/teamBanners/banner-side-DAL.png"
+    },
+    "store": {
+      "url": "/teams/DAL",
+      "banner_store": "/mock/teamStores/store-banner-DAL.png",
+      "name": "Dallas Mavericks Official Store"
+    }
   },
   {
     "id": 8,
@@ -76,8 +132,16 @@
     "conference": "West",
     "division": "Northwest",
     "full_name": "Denver Nuggets",
-    "imageSrc": "/mock/teamLogos/team-logo-DEN.png",
-    "url": "/teams/DEN"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-DEN.png",
+      "banner_header": "/mock/teamBanners/banner-header-DEN.png",
+      "banner_side": "/mock/teamBanners/banner-side-DEN.png"
+    },
+    "store": {
+      "url": "/teams/DEN",
+      "banner_store": "/mock/teamStores/store-banner-DEN.png",
+      "name": "Denver Nuggets Official Store"
+    }
   },
   {
     "id": 9,
@@ -86,8 +150,16 @@
     "conference": "East",
     "division": "Central",
     "full_name": "Detroit Pistons",
-    "imageSrc": "/mock/teamLogos/team-logo-DET.png",
-    "url": "/teams/DET"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-DET.png",
+      "banner_header": "/mock/teamBanners/banner-header-DET.png",
+      "banner_side": "/mock/teamBanners/banner-side-DET.png"
+    },
+    "store": {
+      "url": "/teams/DET",
+      "banner_store": "/mock/teamStores/store-banner-DET.png",
+      "name": "Detroit Pistons Official Store"
+    }
   },
   {
     "id": 10,
@@ -96,9 +168,18 @@
     "conference": "West",
     "division": "Pacific",
     "full_name": "Golden State Warriors",
-    "imageSrc": "/mock/teamLogos/team-logo-GSW.png",
-    "url": "/teams/GSW"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-GSW.png",
+      "banner_header": "/mock/teamBanners/banner-header-GSW.png",
+      "banner_side": "/mock/teamBanners/banner-side-GSW.png"
+    },
+    "store": {
+      "url": "/teams/GSW",
+      "banner_store": "/mock/teamStores/store-banner-GSW.png",
+      "name": "Golden State Warriors Official Store"
+    }
   },
+
   {
     "id": 11,
     "name": "Houston Rockets",
@@ -106,8 +187,16 @@
     "conference": "West",
     "division": "Southwest",
     "full_name": "Houston Rockets",
-    "imageSrc": "/mock/teamLogos/team-logo-HOU.png",
-    "url": "/teams/HOU"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-HOU.png",
+      "banner_header": "/mock/teamBanners/banner-header-HOU.png",
+      "banner_side": "/mock/teamBanners/banner-side-HOU.png"
+    },
+    "store": {
+      "url": "/teams/HOU",
+      "banner_store": "/mock/teamStores/store-banner-HOU.png",
+      "name": "Houston Rockets Official Store"
+    }
   },
   {
     "id": 12,
@@ -116,8 +205,16 @@
     "conference": "East",
     "division": "Central",
     "full_name": "Indiana Pacers",
-    "imageSrc": "/mock/teamLogos/team-logo-IND.png",
-    "url": "/teams/IND"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-IND.png",
+      "banner_header": "/mock/teamBanners/banner-header-IND.png",
+      "banner_side": "/mock/teamBanners/banner-side-IND.png"
+    },
+    "store": {
+      "url": "/teams/IND",
+      "banner_store": "/mock/teamStores/store-banner-IND.png",
+      "name": "Indiana Pacers Official Store"
+    }
   },
   {
     "id": 13,
@@ -126,8 +223,16 @@
     "conference": "West",
     "division": "Pacific",
     "full_name": "Los Angeles Clippers",
-    "imageSrc": "/mock/teamLogos/team-logo-LAC.png",
-    "url": "/teams/LAC"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-LAC.png",
+      "banner_header": "/mock/teamBanners/banner-header-LAC.png",
+      "banner_side": "/mock/teamBanners/banner-side-LAC.png"
+    },
+    "store": {
+      "url": "/teams/LAC",
+      "banner_store": "/mock/teamStores/store-banner-LAC.png",
+      "name": "Los Angeles Clippers Official Store"
+    }
   },
   {
     "id": 14,
@@ -136,8 +241,16 @@
     "conference": "West",
     "division": "Pacific",
     "full_name": "Los Angeles Lakers",
-    "imageSrc": "/mock/teamLogos/team-logo-LAL.png",
-    "url": "/teams/LAL"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-LAL.png",
+      "banner_header": "/mock/teamBanners/banner-header-LAL.png",
+      "banner_side": "/mock/teamBanners/banner-side-LAL.png"
+    },
+    "store": {
+      "url": "/teams/LAL",
+      "banner_store": "/mock/teamStores/store-banner-LAL.png",
+      "name": "Los Angeles Lakers Official Store"
+    }
   },
   {
     "id": 15,
@@ -146,8 +259,16 @@
     "conference": "West",
     "division": "Southwest",
     "full_name": "Memphis Grizzlies",
-    "imageSrc": "/mock/teamLogos/team-logo-MEM.png",
-    "url": "/teams/MEM"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-MEM.png",
+      "banner_header": "/mock/teamBanners/banner-header-MEM.png",
+      "banner_side": "/mock/teamBanners/banner-side-MEM.png"
+    },
+    "store": {
+      "url": "/teams/MEM",
+      "banner_store": "/mock/teamStores/store-banner-MEM.png",
+      "name": "Memphis Grizzlies Official Store"
+    }
   },
   {
     "id": 16,
@@ -156,8 +277,16 @@
     "conference": "East",
     "division": "Southeast",
     "full_name": "Miami Heat",
-    "imageSrc": "/mock/teamLogos/team-logo-MIA.png",
-    "url": "/teams/MIA"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-MIA.png",
+      "banner_header": "/mock/teamBanners/banner-header-MIA.png",
+      "banner_side": "/mock/teamBanners/banner-side-MIA.png"
+    },
+    "store": {
+      "url": "/teams/MIA",
+      "banner_store": "/mock/teamStores/store-banner-MIA.png",
+      "name": "Miami Heat Official Store"
+    }
   },
   {
     "id": 17,
@@ -166,8 +295,16 @@
     "conference": "East",
     "division": "Central",
     "full_name": "Milwaukee Bucks",
-    "imageSrc": "/mock/teamLogos/team-logo-MIL.png",
-    "url": "/teams/MIL"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-MIL.png",
+      "banner_header": "/mock/teamBanners/banner-header-MIL.png",
+      "banner_side": "/mock/teamBanners/banner-side-MIL.png"
+    },
+    "store": {
+      "url": "/teams/MIL",
+      "banner_store": "/mock/teamStores/store-banner-MIL.png",
+      "name": "Milwaukee Bucks Official Store"
+    }
   },
   {
     "id": 18,
@@ -176,8 +313,16 @@
     "conference": "West",
     "division": "Northwest",
     "full_name": "Minnesota Timberwolves",
-    "imageSrc": "/mock/teamLogos/team-logo-MIN.png",
-    "url": "/teams/MIN"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-MIN.png",
+      "banner_header": "/mock/teamBanners/banner-header-MIN.png",
+      "banner_side": "/mock/teamBanners/banner-side-MIN.png"
+    },
+    "store": {
+      "url": "/teams/MIN",
+      "banner_store": "/mock/teamStores/store-banner-MIN.png",
+      "name": "Minnesota Timberwolves Official Store"
+    }
   },
   {
     "id": 19,
@@ -186,8 +331,16 @@
     "conference": "West",
     "division": "Southwest",
     "full_name": "New Orleans Pelicans",
-    "imageSrc": "/mock/teamLogos/team-logo-NOP.png",
-    "url": "/teams/NOP"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-NOP.png",
+      "banner_header": "/mock/teamBanners/banner-header-NOP.png",
+      "banner_side": "/mock/teamBanners/banner-side-NOP.png"
+    },
+    "store": {
+      "url": "/teams/NOP",
+      "banner_store": "/mock/teamStores/store-banner-NOP.png",
+      "name": "New Orleans Pelicans Official Store"
+    }
   },
   {
     "id": 20,
@@ -196,9 +349,18 @@
     "conference": "East",
     "division": "Atlantic",
     "full_name": "New York Knicks",
-    "imageSrc": "/mock/teamLogos/team-logo-NYK.png",
-    "url": "/teams/NYK"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-NYK.png",
+      "banner_header": "/mock/teamBanners/banner-header-NYK.png",
+      "banner_side": "/mock/teamBanners/banner-side-NYK.png"
+    },
+    "store": {
+      "url": "/teams/NYK",
+      "banner_store": "/mock/teamStores/store-banner-NYK.png",
+      "name": "New York Knicks Official Store"
+    }
   },
+
   {
     "id": 21,
     "name": "Oklahoma City Thunder",
@@ -206,8 +368,16 @@
     "conference": "West",
     "division": "Northwest",
     "full_name": "Oklahoma City Thunder",
-    "imageSrc": "/mock/teamLogos/team-logo-OKC.png",
-    "url": "/teams/OKC"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-OKC.png",
+      "banner_header": "/mock/teamBanners/banner-header-OKC.png",
+      "banner_side": "/mock/teamBanners/banner-side-OKC.png"
+    },
+    "store": {
+      "url": "/teams/OKC",
+      "banner_store": "/mock/teamStores/store-banner-OKC.png",
+      "name": "Oklahoma City Thunder Official Store"
+    }
   },
   {
     "id": 22,
@@ -216,8 +386,16 @@
     "conference": "East",
     "division": "Southeast",
     "full_name": "Orlando Magic",
-    "imageSrc": "/mock/teamLogos/team-logo-ORL.png",
-    "url": "/teams/ORL"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-ORL.png",
+      "banner_header": "/mock/teamBanners/banner-header-ORL.png",
+      "banner_side": "/mock/teamBanners/banner-side-ORL.png"
+    },
+    "store": {
+      "url": "/teams/ORL",
+      "banner_store": "/mock/teamStores/store-banner-ORL.png",
+      "name": "Orlando Magic Official Store"
+    }
   },
   {
     "id": 23,
@@ -226,8 +404,16 @@
     "conference": "East",
     "division": "Atlantic",
     "full_name": "Philadelphia 76ers",
-    "imageSrc": "/mock/teamLogos/team-logo-PHI.png",
-    "url": "/teams/PHI"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-PHI.png",
+      "banner_header": "/mock/teamBanners/banner-header-PHI.png",
+      "banner_side": "/mock/teamBanners/banner-side-PHI.png"
+    },
+    "store": {
+      "url": "/teams/PHI",
+      "banner_store": "/mock/teamStores/store-banner-PHI.png",
+      "name": "Philadelphia 76ers Official Store"
+    }
   },
   {
     "id": 24,
@@ -236,8 +422,16 @@
     "conference": "West",
     "division": "Pacific",
     "full_name": "Phoenix Suns",
-    "imageSrc": "/mock/teamLogos/team-logo-PHX.png",
-    "url": "/teams/PHX"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-PHX.png",
+      "banner_header": "/mock/teamBanners/banner-header-PHX.png",
+      "banner_side": "/mock/teamBanners/banner-side-PHX.png"
+    },
+    "store": {
+      "url": "/teams/PHX",
+      "banner_store": "/mock/teamStores/store-banner-PHX.png",
+      "name": "Phoenix Suns Official Store"
+    }
   },
   {
     "id": 25,
@@ -246,8 +440,16 @@
     "conference": "West",
     "division": "Northwest",
     "full_name": "Portland Trail Blazers",
-    "imageSrc": "/mock/teamLogos/team-logo-POR.png",
-    "url": "/teams/POR"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-POR.png",
+      "banner_header": "/mock/teamBanners/banner-header-POR.png",
+      "banner_side": "/mock/teamBanners/banner-side-POR.png"
+    },
+    "store": {
+      "url": "/teams/POR",
+      "banner_store": "/mock/teamStores/store-banner-POR.png",
+      "name": "Portland Trail Blazers Official Store"
+    }
   },
   {
     "id": 26,
@@ -256,8 +458,16 @@
     "conference": "West",
     "division": "Pacific",
     "full_name": "Sacramento Kings",
-    "imageSrc": "/mock/teamLogos/team-logo-SAC.png",
-    "url": "/teams/SAC"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-SAC.png",
+      "banner_header": "/mock/teamBanners/banner-header-SAC.png",
+      "banner_side": "/mock/teamBanners/banner-side-SAC.png"
+    },
+    "store": {
+      "url": "/teams/SAC",
+      "banner_store": "/mock/teamStores/store-banner-SAC.png",
+      "name": "Sacramento Kings Official Store"
+    }
   },
   {
     "id": 27,
@@ -266,8 +476,16 @@
     "conference": "West",
     "division": "Southwest",
     "full_name": "San Antonio Spurs",
-    "imageSrc": "/mock/teamLogos/team-logo-SAS.png",
-    "url": "/teams/SAS"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-SAS.png",
+      "banner_header": "/mock/teamBanners/banner-header-SAS.png",
+      "banner_side": "/mock/teamBanners/banner-side-SAS.png"
+    },
+    "store": {
+      "url": "/teams/SAS",
+      "banner_store": "/mock/teamStores/store-banner-SAS.png",
+      "name": "San Antonio Spurs Official Store"
+    }
   },
   {
     "id": 28,
@@ -276,8 +494,16 @@
     "conference": "East",
     "division": "Atlantic",
     "full_name": "Toronto Raptors",
-    "imageSrc": "/mock/teamLogos/team-logo-TOR.png",
-    "url": "/teams/TOR"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-TOR.png",
+      "banner_header": "/mock/teamBanners/banner-header-TOR.png",
+      "banner_side": "/mock/teamBanners/banner-side-TOR.png"
+    },
+    "store": {
+      "url": "/teams/TOR",
+      "banner_store": "/mock/teamStores/store-banner-TOR.png",
+      "name": "Toronto Raptors Official Store"
+    }
   },
   {
     "id": 29,
@@ -286,8 +512,16 @@
     "conference": "West",
     "division": "Northwest",
     "full_name": "Utah Jazz",
-    "imageSrc": "/mock/teamLogos/team-logo-UTA.png",
-    "url": "/teams/UTA"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-UTA.png",
+      "banner_header": "/mock/teamBanners/banner-header-UTA.png",
+      "banner_side": "/mock/teamBanners/banner-side-UTA.png"
+    },
+    "store": {
+      "url": "/teams/UTA",
+      "banner_store": "/mock/teamStores/store-banner-UTA.png",
+      "name": "Utah Jazz Official Store"
+    }
   },
   {
     "id": 30,
@@ -296,7 +530,15 @@
     "conference": "East",
     "division": "Southeast",
     "full_name": "Washington Wizards",
-    "imageSrc": "/mock/teamLogos/team-logo-WAS.png",
-    "url": "/teams/WAS"
+    "images": {
+      "logo": "/mock/teamLogos/team-logo-WAS.png",
+      "banner_header": "/mock/teamBanners/banner-header-WAS.png",
+      "banner_side": "/mock/teamBanners/banner-side-WAS.png"
+    },
+    "store": {
+      "url": "/teams/WAS",
+      "banner_store": "/mock/teamStores/store-banner-WAS.png",
+      "name": "Washington Wizards Official Store"
+    }
   }
 ]
