@@ -31,7 +31,7 @@ export default function TeamCard({ team }: Props) {
             p: "10px",
           }}
         >
-          <Image src={team.imageSrc} alt={team.name} fill style={{ objectFit: "contain" }} />
+          <Image src={team.images.logo} alt={team.name} fill style={{ objectFit: "contain" }} />
         </Box>
         <Box
           sx={{
