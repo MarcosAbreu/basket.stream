@@ -22,7 +22,7 @@ export default function Last10Games({ selectedTeam }: Props) {
       <Paper sx={{ width: "100%", height: "100%" }}>
         <TableContainer sx={{ height: "100%", overflowY: "auto" }}>
           <Table stickyHeader>
-            <TableHead sx={{ display: { md: "block", xs: "none" } }}>
+            <TableHead sx={{ display: { md: "table-header-group", xs: "none" } }}>
               <TableRow>
                 <TableCell
                   sx={{
