@@ -111,13 +111,20 @@ interface Props {
 export default function RosterSection({ data }: Props) {
   const router = useRouter();
   return (
-    <Box sx={{ mt: "40px", display: "flex", flexDirection: "column", gap: "30px" }}>
-      <Typography>Roster</Typography>
+    <Box
+      sx={{
+        mt: { md: "40px", xs: "0px" },
+        display: "flex",
+        flexDirection: "column",
+        gap: "30px",
+      }}
+    >
+      <Typography sx={{ display: { md: "block", xs: "none" } }}>Roster</Typography>
       <Paper sx={{ width: "100%", height: "100%" }}>
         <TableContainer
           sx={{
             position: "relative",
-            maxHeight: "100%", // Custom scrollbar styles
+            maxHeight: "100%",
             overflowY: "none",
           }}
         >

@@ -18,11 +18,11 @@ interface Props {
 }
 export default function Last10Games({ selectedTeam }: Props) {
   return (
-    <Box sx={{ width: "100%", height: "calc(50% - 20px)", position: "relative" }}>
+    <Box sx={{ width: "100%", height: "calc(100% - 20px)", position: "relative" }}>
       <Paper sx={{ width: "100%", height: "100%" }}>
         <TableContainer sx={{ height: "100%", overflowY: "auto" }}>
           <Table stickyHeader>
-            <TableHead>
+            <TableHead sx={{ display: { md: "table-header-group", xs: "none" } }}>
               <TableRow>
                 <TableCell
                   sx={{

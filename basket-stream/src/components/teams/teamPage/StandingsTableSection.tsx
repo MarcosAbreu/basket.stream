@@ -60,7 +60,7 @@ export default function StandingsTableSection({
     [conference]
   );
   return (
-    <Box sx={{ bgcolor: "red", width: "100%", height: "50%" }}>
+    <Box sx={{ width: "100%", height: "100%" }}>
       <Paper sx={{ width: "100%", height: "100%" }}>
         <TableContainer
           sx={{
@@ -81,7 +81,7 @@ export default function StandingsTableSection({
                         minWidth: { md: "100px", xs: "100px" },
                         bgcolor: "common.black",
                         color: "common.white",
-                        fontSize: { md: "12px", xs: "10px" },
+                        fontSize: { md: "12px", xs: "12px" },
                         fontWeight: "400",
                         textTransform: "uppercase",
                         p: { md: "14px", xs: "6px" },
@@ -102,7 +102,7 @@ export default function StandingsTableSection({
                         bgcolor: "common.black",
                         color: "common.white",
                         textTransform: "uppercase",
-                        fontSize: { md: "14px", xs: "10px" },
+                        fontSize: { md: "14px", xs: "12px" },
                         fontWeight: "400",
                         p: { md: "10px", xs: "4px" },
                       }}
@@ -138,8 +138,8 @@ export default function StandingsTableSection({
                         align="center"
                         sx={{
                           color: selected === team.team ? "primary.main" : "common.white",
-                          fontSize: { md: "16px", xs: "10px" },
-                          p: { md: "5px", xs: "4px" },
+                          fontSize: { md: "16px", xs: "16px" },
+                          p: { md: "5px", xs: "5px" },
                           borderBottom: "none",
                         }}
                       >
@@ -147,30 +147,43 @@ export default function StandingsTableSection({
                           <Box
                             sx={{
                               display: "flex",
-                              gap: { md: "20px", xs: "10px" },
+
                               flexDirection: "row",
                               alignItems: "center",
-                              pl: "20px",
+                              pl: { md: "20px", xs: "10px" },
                             }}
                           >
-                            <Typography sx={{ fontSize: { md: "16px", xs: "10px" } }}>
-                              {team.rank}
-                            </Typography>
+                            <Box sx={{ width: "20px" }}>
+                              <Typography sx={{ fontSize: { md: "16px", xs: "16px" } }}>
+                                {team.rank}
+                              </Typography>
+                            </Box>
                             <Box
                               sx={{
-                                position: "relative",
-                                width: { md: "70px", xs: "20px" },
-                                height: { md: "50px", xs: "20px" },
+                                display: "flex",
+                                width: { md: "50px", xs: "40px" },
+                                height: { md: "50px", xs: "40px" },
+                                justifyContent: "center",
+                                alignItems: "center",
+                                m: { md: "0 20px", xs: "0 10px" },
                               }}
                             >
-                              <Image
-                                src={team.logo}
-                                alt={team.team}
-                                fill
-                                style={{ objectFit: "contain" }}
-                              />
+                              <Box
+                                sx={{
+                                  position: "relative",
+                                  width: { md: "50px", xs: "40px" },
+                                  height: { md: "50px", xs: "40px" },
+                                }}
+                              >
+                                <Image
+                                  src={team.logo}
+                                  alt={team.team}
+                                  fill
+                                  style={{ objectFit: "contain" }}
+                                />
+                              </Box>
                             </Box>
-                            <Typography sx={{ fontSize: { md: "16px", xs: "10px" } }}>
+                            <Typography sx={{ fontSize: { md: "16px", xs: "16px" } }}>
                               {team.team}
                             </Typography>
                           </Box>

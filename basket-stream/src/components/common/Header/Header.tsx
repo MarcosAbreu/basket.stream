@@ -191,7 +191,7 @@ function Header() {
                   style={{
                     display: "block",
                     cursor: "pointer",
-                    margin: "auto 30px",
+                    padding: "20px",
                     textTransform: "capitalize",
                     color: pathname === page.path.toLocaleLowerCase() ? lineColor : "common.white",
                     fontWeight: 500,

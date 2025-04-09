@@ -10,6 +10,7 @@ import Last10Games from "@/components/teams/teamPage/Last10Games/Last10Games";
 
 import standingsData from "@/mock/standings.json";
 import mockPlayersStats from "@/mock/playersStats.json";
+import PageSection from "@/components/teams/teamPage/PageSection";
 
 export async function generateStaticParams() {
   return teams.map((team) => ({
@@ -31,9 +32,22 @@ export default async function TeamPage({
   if (!team) return notFound();
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", padding: "50px 90px" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        padding: { md: "50px 90px", xs: "30px 0" },
+        minHeight: "100vh",
+      }}
+    >
       <TeamHeader team={team} />
-      <Box sx={{ display: "flex", flexDirection: "row", gap: "40px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { md: "row", xs: "column" },
+          gap: { md: "40px", xs: "20px" },
+        }}
+      >
         <Box
           sx={{
             width: "calc(100% - 480px)",
@@ -49,22 +63,38 @@ export default async function TeamPage({
               mt: "30px",
               flexDirection: "column",
               gap: "20px",
-              minWidth: "540px",
+              minWidth: { md: "540px", xs: "100vw" },
               flex: 1,
-              height: "600px",
+              height: { md: "600px", xs: "fit-content" },
             }}
           >
-            <StandingsTableSection
-              conference={team.conference.toLowerCase()}
-              data={conferenceData}
-              selected={team.name}
-            />
-            <Last10Games selectedTeam={team.id} />
+            <Box sx={{ height: { md: "50%", xs: "fit-content" } }}>
+              <PageSection label="Standings">
+                <StandingsTableSection
+                  conference={team.conference.toLowerCase()}
+                  data={conferenceData}
+                  selected={team.name}
+                />
+              </PageSection>
+            </Box>
+            <Box sx={{ height: { md: "50%", xs: "fit-content" } }}>
+              <PageSection label="Last 10 Games">
+                <Last10Games selectedTeam={team.id} />
+              </PageSection>
+            </Box>
           </Box>
         </Box>
-        <StatsRankingSection selectedTeam={team.id} />
+        <Box>
+          <PageSection label="Stats Ranking">
+            <StatsRankingSection selectedTeam={team.id} />
+          </PageSection>
+        </Box>
       </Box>
-      <RosterSection data={mockPlayersStats.filter((player) => player.teamId === team.id)} />
+      <Box sx={{ mt: "20px" }}>
+        <PageSection label="Roster">
+          <RosterSection data={mockPlayersStats.filter((player) => player.teamId === team.id)} />
+        </PageSection>
+      </Box>
     </Box>
   );
 }
