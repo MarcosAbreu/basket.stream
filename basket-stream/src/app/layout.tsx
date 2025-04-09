@@ -5,6 +5,7 @@ import theme from "@/theme/theme";
 import ReactQueryProvider from "@/provider/ReactQueryProvider";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Header from "@/components/common/Header/Header";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
@@ -59,6 +60,7 @@ export default function RootLayout({
             </ThemeProvider>
           </ReactQueryProvider>
         </Box>
+        <Analytics />
       </body>
     </html>
   );
