@@ -10,10 +10,23 @@ interface Props {
 
 export default function StoreLink({ store }: Props) {
   return (
-    <Box sx={{ position: "relative", width: "220px", height: "100px" }}>
-      <Link href={store.url} style={{ textDecoration: "none" }}>
-        <Image src={store.banner_store} alt={store.name} fill style={{ objectFit: "contain" }} />
-      </Link>
+    <Box
+      sx={{
+        position: "relative",
+        width: { md: "220px", xs: "100%" },
+        height: { md: "100px", xs: "100%" },
+      }}
+    >
+      <Box sx={{ display: { md: "inline", xs: "none" } }}>
+        <Link href={store.url} style={{ textDecoration: "none" }}>
+          <Image src={store.banner_store} alt={store.name} fill style={{ objectFit: "contain" }} />
+        </Link>
+      </Box>
+      <Box sx={{ display: { md: "none", xs: "inline" }, color: "common.white" }}>
+        <Link href={store.url} style={{ textDecoration: "none" }}>
+          {store.name}
+        </Link>
+      </Box>
     </Box>
   );
 }

@@ -16,11 +16,18 @@ import { getStatsRanking } from "@/lib/schemas/statsRankingSchema";
 
 export default function StatsRankingSection({ selectedTeam }: { selectedTeam: number }) {
   return (
-    <Box sx={{ width: "440px", height: "100%", mt: "30px", position: "relative" }}>
+    <Box
+      sx={{
+        width: { md: "440px", xs: "100%" },
+        height: "100%",
+        mt: { md: "30px", xs: "0" },
+        position: "relative",
+      }}
+    >
       <Paper sx={{ width: "100%", height: "100%" }}>
         <TableContainer sx={{ height: "100%", overflowY: "auto" }}>
           <Table stickyHeader>
-            <TableHead>
+            <TableHead sx={{ display: { md: "block", xs: "none" } }}>
               <TableRow>
                 <TableCell
                   sx={{

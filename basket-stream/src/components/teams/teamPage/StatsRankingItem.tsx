@@ -53,10 +53,14 @@ export default function StatsRankingItem({ statName, value, rank }: Props) {
             gap: "20px",
           }}
         >
-          <Typography sx={{ fontSize: "18px", textAlign: "start" }}>{name}</Typography>
+          <Typography sx={{ fontSize: { md: "18px", xs: "16px" }, textAlign: "start" }}>
+            {name}
+          </Typography>
           <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px" }}>
-            <Typography sx={{ fontSize: "20px" }}>{value}</Typography>
-            <Typography sx={{ fontSize: "20px", width: "50px", textAlign: "end" }}>{`${rank}${
+            <Typography sx={{ fontSize: { md: "18px", xs: "16px" } }}>{value}</Typography>
+            <Typography
+              sx={{ fontSize: { md: "18px", xs: "16px" }, width: "50px", textAlign: "end" }}
+            >{`${rank}${
               rank === 1 ? "st" : rank === 2 ? "nd" : rank === 3 ? "rd" : "th"
             }`}</Typography>
           </Box>

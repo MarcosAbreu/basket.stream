@@ -74,7 +74,7 @@ export default function Last10GamesItem({ gameStats, selectedTeam }: Props) {
             alignItems: "center",
             justifyContent: "space-between",
             gap: "40px",
-            p: "0 30px",
+            p: { md: "0 30px", xs: "0 10px" },
             flex: 1,
           }}
         >
@@ -109,7 +109,14 @@ export default function Last10GamesItem({ gameStats, selectedTeam }: Props) {
           </Box>
 
           <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px" }}>
-            <Box sx={{ position: "relative", width: "40px", height: "40px" }}>
+            <Box
+              sx={{
+                position: "relative",
+                width: "40px",
+                height: "40px",
+                display: { md: "block", xs: "none" },
+              }}
+            >
               <Image
                 src={gameStats.team.logo}
                 alt={gameStats.team.name}
@@ -129,7 +136,7 @@ export default function Last10GamesItem({ gameStats, selectedTeam }: Props) {
           </Box>
           <Box
             sx={{
-              display: "flex",
+              display: { md: "flex", xs: "none" },
               flexDirection: "row",
               justifyContent: "space-between",
               gap: "20px",
