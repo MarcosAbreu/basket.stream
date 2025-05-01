@@ -1,11 +1,13 @@
+"use client";
 import { Box } from "@mui/material";
 import React from "react";
 import SideConferenceBanner from "./SideConferenceBanner";
 import ConferenceContainer from "./ConferenceContainer";
 import ConferenceTeamsContainer from "./ConferenceTeamsContainer";
-import mockTeams from "@/mock/teamsPage.json";
 
-export default function TeamsContainer() {
+import { TeamType } from "@/lib/types";
+
+export default function TeamsContainer({ teams }: { teams: TeamType[] }) {
   return (
     <Box
       sx={{
@@ -27,12 +29,16 @@ export default function TeamsContainer() {
         <ConferenceContainer conference="West">
           <SideConferenceBanner conference="West" />
           <ConferenceTeamsContainer
-            teams={mockTeams.filter((team) => team.conference === "West")}
+            teams={teams
+              .filter((team) => team.conference.toLowerCase() === "West".toLowerCase())
+              .sort((a, b) => a.name.localeCompare(b.name))}
           />
         </ConferenceContainer>
         <ConferenceContainer conference="East">
           <ConferenceTeamsContainer
-            teams={mockTeams.filter((team) => team.conference === "East")}
+            teams={teams
+              .filter((team) => team.conference.toLowerCase() === "East".toLowerCase())
+              .sort((a, b) => a.name.localeCompare(b.name))}
           />
           <SideConferenceBanner conference="East" />
         </ConferenceContainer>

@@ -1,4 +1,5 @@
 import { TeamType } from "@/lib/types";
+import { getImageUrl } from "@/utils/getImageURL";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,7 +32,12 @@ export default function TeamCard({ team }: Props) {
             p: "10px",
           }}
         >
-          <Image src={team.images.logo} alt={team.name} fill style={{ objectFit: "contain" }} />
+          <Image
+            src={getImageUrl(team.images.logo)}
+            alt={team.name}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Box>
         <Box
           sx={{

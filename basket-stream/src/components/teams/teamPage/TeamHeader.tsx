@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import StoreLink from "./StoreLink";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { getImageUrl } from "@/utils/getImageURL";
 
 interface Props {
   team: TeamType;
@@ -31,7 +32,7 @@ export default function TeamHeader({ team }: Props) {
           }}
         >
           <Image
-            src={team.images.banner_header}
+            src={getImageUrl(team.images.banner_header)}
             alt={team.full_name}
             fill
             style={{ objectFit: "cover" }}
@@ -57,7 +58,7 @@ export default function TeamHeader({ team }: Props) {
             }}
           >
             <Image
-              src={team.images.logo}
+              src={getImageUrl(team.images.logo)}
               alt={team.full_name}
               fill
               style={{ objectFit: "contain" }}
@@ -106,7 +107,7 @@ export default function TeamHeader({ team }: Props) {
                 store={{
                   name: "NBA Store",
                   url: "https://store.nba.com/",
-                  banner_store: "/mock/teamStores/store-banner-nba.png",
+                  banner_store: getImageUrl("/static/teamStores/store-banner-nba.png"),
                 }}
               />
             </MenuItem>
@@ -119,7 +120,7 @@ export default function TeamHeader({ team }: Props) {
             store={{
               name: "NBA Store",
               url: "https://store.nba.com/",
-              banner_store: "/mock/teamStores/store-banner-nba.png",
+              banner_store: getImageUrl("/static/teamStores/store-banner-nba.png"),
             }}
           />
         </Box>

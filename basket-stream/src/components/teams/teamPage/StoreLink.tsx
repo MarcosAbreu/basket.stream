@@ -1,4 +1,5 @@
 import { StoreType } from "@/lib/types";
+import { getImageUrl } from "@/utils/getImageURL";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +20,12 @@ export default function StoreLink({ store }: Props) {
     >
       <Box sx={{ display: { md: "inline", xs: "none" } }}>
         <Link href={store.url} style={{ textDecoration: "none" }}>
-          <Image src={store.banner_store} alt={store.name} fill style={{ objectFit: "contain" }} />
+          <Image
+            src={getImageUrl(store.banner_store)}
+            alt={store.name}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Link>
       </Box>
       <Box sx={{ display: { md: "none", xs: "inline" }, color: "common.white" }}>

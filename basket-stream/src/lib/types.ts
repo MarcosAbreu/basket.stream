@@ -12,6 +12,20 @@ export type TeamType = {
   };
   store: StoreType;
 };
+export type APITeamType = {
+  id: number;
+  name: string;
+  conference: string;
+  full_name: string;
+  images__banner_header: string;
+  store__url: string;
+  store__name: string;
+  abbreviation: string;
+  division: string;
+  images__logo: string;
+  images__banner_side: string;
+  store__banner_store: string;
+};
 export type StatsType = {
   statsId: number;
   gameId: number;
